@@ -47,8 +47,8 @@ const TodoItem = ({ todo, onUpdate, onDelete }) => {
                             setUpdatedData({ ...updatedData, description: e.target.value })
                         }
                     ></textarea>
-                    <button onClick={handleSave}>Save</button>
-                    <button onClick={() => setIsEditing(false)}>Cancel</button>
+                    <button className='saveButton' onClick={handleSave}>Save</button>
+                    <button className='cancelButton' onClick={() => setIsEditing(false)}>Cancel</button>
                 </>
             ) : (
                 <>
@@ -61,8 +61,8 @@ const TodoItem = ({ todo, onUpdate, onDelete }) => {
                         checked={updatedData.completed}
                         onChange={toggleCompleted}
                     />
-                    <button onClick={() => setIsEditing(true)}>Edit</button>
-                    <button onClick={() => onDelete(todo.id)}>Delete</button>
+                    <button className='editButton' onClick={() => setIsEditing(true)}>Edit</button>
+                    <button className='deleteButton' onClick={() => onDelete(todo.id)}>Delete</button>
                 </>
             )}
         </li>

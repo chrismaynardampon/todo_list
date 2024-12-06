@@ -58,25 +58,27 @@ const TodoList = () => {
 
     return (
         <div className="container">
-            <h2>Todo List</h2>
+            <h2>To-Do List</h2>
             <div>
                 <input
                     type="text"
                     value={newTodo.title}
                     onChange={(e) => setNewTodo({ ...newTodo, title: e.target.value })}
-                    placeholder="Title"
+                    placeholder="Task Name"
+                    className='taskName'
                 />
                 <textarea
                     value={newTodo.description}
                     onChange={(e) => setNewTodo({ ...newTodo, description: e.target.value })}
-                    placeholder="Description"
+                    placeholder="Task Description"
+                    className='taskDesc'
                 ></textarea>
-                <button onClick={handleCreate}>Add Todo</button>
+                <button className='addButton' onClick={handleCreate}>Add Task to List</button>
             </div>
             <div className="todo-header">
-                <span>Title</span>
+                <span>Task</span>
                 <span>Description</span>
-                <span>Completed</span>
+                <span>Status</span>
             </div>
             <ul>
                 {todos.map((todo) => (

@@ -1,11 +1,39 @@
+body{
+  background: linear-gradient(135deg, #dae2b7, #a4e6b8);
+  /* background: linear-gradient(135deg, #b7f5c9, #5da070); */
+}
+.headerz{
+  background: linear-gradient(135deg, #bbeec0, #91d8a5);
+  padding-bottom: 30px;
+}
 .container {
   margin: 0 auto;
   padding: 20px;
   max-width: 1000px;
 }
 
+h1 {
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+p{
+  text-align: center;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
+}
+
 h2 {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .todo-header,
@@ -17,6 +45,11 @@ h2 {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.taskName, .taskDesc{
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .todo-header {
@@ -36,21 +69,37 @@ h2 {
   margin-right: 10px;
 }
 
+
 .todo-item input[type="checkbox"] {
   margin-left: 10px;
+}
+.todo-item:hover {
+  background-color: #7bb87b;
+  transition: background-color 0.3s ease;
 }
 
 button {
   margin-left: 10px;
   padding: 5px 10px;
   border: none;
-  background-color: #4CAF50;
+  background-color: #327a34;
   color: white;
   cursor: pointer;
+  font-size: 15px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #45a049;
+  transform: scale(1.05);
+}
+.deleteButton:hover {
+  background-color: #c53a30;
+}
+
+.cancelButton:hover {
+  background-color: #e5e5e5;
 }
 
 .completed-title {
@@ -64,4 +113,28 @@ textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.editButton, .deleteButton, .cancelButton, .saveButton{
+  border-radius: 4px;
+}
+
+.addButton{
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #327a34;
+}
+
+.deleteButton{
+  background-color: #af2b21;
+}
+
+.cancelButton{
+  background-color: #ffffff; color: black;
+}
+
+.todo-header,
+.todo-item,
+button {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
