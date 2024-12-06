@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000/api/todos/';
+const API_BASE_URL = 'http://localhost:8000/todos/';
 
 export const getTodos = async () => axios.get(API_BASE_URL);
 export const createTodo = async (data) => axios.post(API_BASE_URL, data);
