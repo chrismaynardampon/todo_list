@@ -44,7 +44,7 @@ This system is designed for users aiming to:
 
 - **Chris Maynard Ampon -  https://github.com/chrismaynardampon**
 
-- **Rich Aleeza Campos -  https://github.com/**
+- **Rich Aleeza Campos -  https://github.com/Aleezaaa18**
 
 - **Eunice Mekhaela Estimada -  https://github.com/Estemetek**
 
