@@ -46,6 +46,8 @@ This system is designed for users aiming to:
 
 - **Rich Aleeza Campos -  https://github.com/**
 
-- **Eunice Mekhaela Estimada -  https://github.com/**
+- **Eunice Mekhaela Estimada -  https://github.com/Estemetek**
 
 - **Shan Sai Pedrozo -  https://github.com/shansaipedz**
+
+![Screenshot (3)](https://github.com/user-attachments/assets/623cdbed-9d61-4cbb-ba29-36a7e01bfad9)
